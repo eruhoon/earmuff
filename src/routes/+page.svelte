@@ -9,6 +9,14 @@
     // Learn more about Tauri commands at https://tauri.app/develop/calling-rust/
     greetMsg = await invoke("greet", { name });
   }
+
+  async function openPaint() {
+    await invoke("open_paint");
+  }
+
+  async function execute_vbs() {
+    await invoke("execute_vbs");
+  }
 </script>
 
 <main class="container">
@@ -32,6 +40,11 @@
     <button type="submit">Greet</button>
   </form>
   <p>{greetMsg}</p>
+
+  <div class="row">
+    <button onclick={openPaint}>Open Paint</button>
+    <button onclick={execute_vbs}>LOA ON/OFF</button>
+  </div>
 </main>
 
 <style>
