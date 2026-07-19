@@ -13,8 +13,14 @@
     "windows": [
       {
         "title": "earmuff",
-        "width": 800,
-        "height": 600
+        "width": 160,
+        "height": 60,
+        "resizable": false,
+        "decorations": false,
+        "transparent": true,
+        "alwaysOnTop": true,
+        "shadow": false,
+        "skipTaskbar": true
       }
     ],
     "security": {
